@@ -3,14 +3,13 @@
  */
 
 
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType( propOrder = { "color","diameter"})
+@XmlType(propOrder = {"color", "diameter"})
 @XmlRootElement(name = "circle")
-public class Circle extends Shape  {
+public class Circle extends Shape {
 
 
     String color;
@@ -19,6 +18,7 @@ public class Circle extends Shape  {
     public String getColor() {
         return color;
     }
+
     @XmlElement(name = "color")
     public void setColor(String color) {
         this.color = color;
@@ -33,7 +33,7 @@ public class Circle extends Shape  {
         this.diameter = diameter;
     }
 
-    public float getArea(){
-        return (float)3.14*this.diameter;
+    public float getArea() {
+        return (float) 3.14 * this.diameter;
     }
 }

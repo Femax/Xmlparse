@@ -6,9 +6,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType( propOrder = { "color","side"})
+@XmlType(propOrder = {"color", "side"})
 @XmlRootElement(name = "circle")
-public class Square extends Shape  {
+public class Square extends Shape {
 
 
     String color;
@@ -31,7 +31,7 @@ public class Square extends Shape  {
         this.side = side;
     }
 
-    public float getArea(){
-        return this.side*this.side;
+    public float getArea() {
+        return this.side * this.side;
     }
 }

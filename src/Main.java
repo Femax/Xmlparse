@@ -14,9 +14,9 @@ public class Main {
             DecimalFormat df = new DecimalFormat("#.##");
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             Shapes xmlShapes = (Shapes) jaxbUnmarshaller.unmarshal(file);
-           for (int i =0; i<xmlShapes.shapes.size();i++){
-               System.out.println("<i>:"+i+"<color>"+xmlShapes.shapes.get(i).getColor()+"-<area>"+df.format(xmlShapes.shapes.get(i).getArea())+"/n");
-           }
+            for (int i = 0; i < xmlShapes.shapes.size(); i++) {
+                System.out.println("<i>:" + i + "<color>" + xmlShapes.shapes.get(i).getColor() + "-<area>" + df.format(xmlShapes.shapes.get(i).getArea()) + "/n");
+            }
 
         } catch (JAXBException e) {
             e.printStackTrace();

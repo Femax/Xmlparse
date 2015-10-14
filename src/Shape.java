@@ -10,7 +10,7 @@ public class Shape {
         return color;
     }
 
-    public float getArea(){
+    public float getArea() {
         return 0;
     }
 }
